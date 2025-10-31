@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Ali8173.github.io/Tenzies/",
   "name": "tenzies",
   "private": true,
   "version": "0.0.0",
@@ -7,10 +8,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
+    "gh-pages": "^6.3.0",
     "nanoid": "^5.1.6",
     "react": "^19.1.1",
     "react-confetti": "^6.4.0",
